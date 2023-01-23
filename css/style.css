@@ -673,7 +673,7 @@ ul.top-info li p.info-text {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;   
     z-index: 1;
 
 }
@@ -681,6 +681,9 @@ ul.top-info li p.info-text {
 .header-one,
 .header-one .site-navigation {
   background: #23282d;
+  z-index: 1000;
+
+  
 }
 
 .header-one .navbar-collapse {
