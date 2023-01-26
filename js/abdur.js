@@ -88,3 +88,66 @@ function myGlobalFunction() {
       moreText.style.display = "inline";
     }
   }
+
+
+    // function foodFunction(){
+    //   var dots=ducument.getElementById("dota");
+    //   var moreText= document.getElementById("morea");
+    //   var btnText = document.getElementById("btnSubmita");
+
+    //   if(dots.style.display==="none"){
+    //     dots.style.display="inline";
+    //     btnText.innerHTML= "Read more";
+    //     moreText.style.display = "none";
+    //   }else{
+    //     dots.style.display="none";
+    //     btnText.innerHTML="Read less";
+    //     moreText.style.display="inline";
+    //   }
+    // }
+
+    function foodFunction() {
+      var dots = document.getElementById("dota");
+      var moreText = document.getElementById("morea");
+      var btnText = document.getElementById("btnSubmita");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+
+
+    // scroll up function on matrix function 
+
+    // const scrollUpButton = document.getElementById("scrollUp");
+    //   scrollUpButton.addEventListener("click", () => {
+    //     window.scrollTo({ top: 0, behavior: "smooth" });
+    //   });
+
+      // window.onscroll = function() {
+      //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      //     document.getElementById("scrollUp").style.display = "block";
+      //   } else {
+      //     document.getElementById("scrollUp").style.display = "none";
+      //   }
+      // };
+      
+
+      const readLessButton = document.getElementById("readLess");
+      const content = document.getElementById("content");
+
+      readLessButton.addEventListener("click", () => {
+        content.classList.toggle("collapsed");
+        if(content.classList.contains("collapsed"))
+          readLessButton.innerText = "Read More";
+        else
+          readLessButton.innerText = "Read Less";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+

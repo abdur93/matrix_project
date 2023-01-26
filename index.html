@@ -17,7 +17,7 @@
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png"  href="images/Matrix Logo.png" > 
+  <link rel="icon" type="image/png"  href="images/matrix-logo/logo.jpg" > 
 
   <!-- CSS
 ================================================== -->
@@ -40,6 +40,7 @@
     #readen{display: none;}
     #besi{display: none;}
     #bunda{display: none;}
+    #morea{display: none;}
 
 
 
@@ -52,6 +53,20 @@
 
 .sticky + .content {
   padding-top: 102px;
+}
+
+#scrollUp {
+  
+}
+.team-members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-member {
+  flex: 1 1 300px;
+  margin:2px;
 }
 
     
@@ -67,7 +82,7 @@
               <div class="row align-items-center">
                 <div class="logo col-lg-2 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                     <a class="d-block" href="index.html">
-                      <img loading="lazy" src="images/logo1.png" style=" height: auto; width: 200px;" alt="Constra">
+                      <img loading="lazy" src="images/matrix-logo/Matrix Logo.png" style=" height: auto; width: 200px;" alt="Constra">
                     </a>
                 </div><!-- logo end -->
       
@@ -143,7 +158,7 @@
                       <div id="navbar-collapse" class="collapse navbar-collapse">
                           <ul class="nav navbar-nav mr-auto">
                             <li class="nav-item dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home </i></a>
                                 <ul class="dropdown-menu" role="menu">
                                   <!-- <li class="active"><a href="index.html">Home One</a></li> -->
                                  
@@ -164,8 +179,8 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                  <li><a href="projects.html">Projects All</a></li>
-                                  <li><a href="projects-single.html">Projects Single</a></li>
+                                  <li><a href="projects.html">On Going on</a></li>
+                                  <li><a href="projects-single.html">Compleate Project</a></li>
                                 </ul>
                             </li>
                     
@@ -268,7 +283,7 @@
           </div>
         </div>
 
-        <div class="banner-carousel-item" style="background-image:url(images/selected_picture/matrix1.jpg)">  
+        <div class="banner-carousel-item" style="background-image:url(images/slider-main/slide.jpg)">  
           
           <div class="slider-content text-left">
               <div class="container h-100">
@@ -329,7 +344,7 @@
           <div class="row">
               <div class="col-lg-6">
                 <div class="ts-intro">
-                    <h2 class="into-title">About Us</h2>
+                    <h1 class="into-title" style="color: rgb(194, 17, 26); font-size: x-large;">About Us</h1>
                     <h3 class="into-sub-title">We deliver Agriculture projects</h3>
                     <p>MATRIX Business Development Ltd (Matrix) is a consulting firm providing strategic and technical supports
                       for private sector development, project monitoring &amp; evaluation, sectoral mapping, agribusiness, value chain
@@ -555,6 +570,10 @@
                       </div>
                     </div>
 
+                     
+
+
+
                     <div class="about">
                      
                     </div>
@@ -586,18 +605,18 @@
                       <img loading="lazy" src="images/projects/agriculture.png" style="height: 70px; width: 80px;" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                      <div class="card">
-                        <div class="card-header p-0 bg-transparent" id="headingSix">
+                      <div class="service-box-title">
+                        <div class="card-header p-0 bg-transparent" id="headingSeven">
                             <h2 class="mb-0">
-                              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                Agriculture Agribusiness
+                              <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                               <a >Agriculture Agribusiness</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
  
                               </button>
                             </h2>
                         </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#our-values-accordion">
+                        <div id="collapseSeven" class="collapse" id="content" aria-labelledby="headingSeven" data-parent="#our-values-accordion">
                             <div class="card-body">
-                              <ul>
+                              <ul id="content">
                                 <li>Agriculture </li>
                                 <li>Horticulture </li>
                                 <li>Aquaculture </li>
@@ -608,8 +627,11 @@
                                 <li>Food security</li>
                                 <li>Climate Change in agriculture </li>
                                 <li>Agricultural Economics </li>
+                                <!-- <button id="readLess">Read Less</button> -->
                               </ul>
+                              
                             </div>
+                           
                         </div>
                       </div>
                     </div>
@@ -620,8 +642,35 @@
                       <img loading="lazy" src="images/projects/Hu.jpg"  style="height: 70px; width: 80px;" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                      <h3 class="service-box-title"><a href="#">Human Resources Development</a></h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                      <h3 class="service-box-title">
+                        <div class="card-header p-0 bg-transparent" id="headingTen">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseSeven">
+                              <a >BUSINESS DEVELOPMENT SERVICES</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                              </button>
+                            </h2>
+                      </div>
+
+                        <div id="collapseTen" class="collapse" id="content" aria-labelledby="headingTen" data-parent="#our-values-accordion">
+                            <div class="card-body">
+                              <ul id="content">
+                                <li>	Markets for Poor (M4P) </li>
+                                <li>	Enterprise and Entrepreneurship developmentulture </li>
+                                <li>	Improvements of competitiveness </li>
+                                <li>	Capacity building of enterprises </li>
+                                <li>	Enterprise visioning  </li>
+                                <li>	Strengthening supply chain </li>
+                                <li>	Value Chain analysis and strengthening</li>
+                                <li>	Provide appropriate business to the enterprises</li>
+                                
+                                <!-- <button id="readLess">Read Less</button> -->
+                              </ul>
+                              
+                            </div>
+                        
+                        </div>
+                     
                     </div>
                 </div><!-- Service 2 end -->
 
@@ -630,10 +679,74 @@
                       <img loading="lazy" src="images/projects/business-development.jpg" style="height: 70px; width: 80px;" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                      <h3 class="service-box-title"><a href="#">Business Development Services</a></h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                      <h3 class="service-box-title">
+                         <div class="card-header p-0 bg-transparent" id="headingEleven">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false"              aria-controls="collapseEleven">
+                                <a >Compliance – GLOBALG.A.P., GAP, HACCP, GMP</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                              </button>
+                            </h2>
+                      </div>
+
+                      <div id="collapseEleven" class="collapse" id="content" aria-labelledby="headingTen" data-parent="#our-values-accordion">
+                        <div class="card-body">
+                          <ul id="content">
+                            <li>GLOBALG.A.P.  </li>
+                            <li>HACCP </li>
+                            <li>CCP </li>
+                            <li>GAP, HACCP, GMP, GLOBALG.A.P. </li>
+                            <li>Farm Capacity building as per GLOBALG.A.P.  </li>
+                            <li>Facilitation for GLOBALG.A.P. certification </li>
+                                                    
+                            <!-- <button id="readLess">Read Less</button> -->
+                          </ul>
+                          
+                        </div>
+                    
+                    </div>
+
+
                     </div>
                 </div><!-- Service 3 end -->
+                <div class="ts-service-box d-flex">
+                  <div class="ts-service-box-img">
+                    <img loading="lazy" src="images/services/Training.png" style="height: 70px; width: 80px;" alt="service-icon">
+                  </div>
+                  <div class="ts-service-box-info">
+                    <h3 class="service-box-title">
+                       <div class="card-header p-0 bg-transparent" id="headingSixteen">
+                          <h2 class="mb-0">
+                            <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                              <a >Training</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                            </button>
+                          </h2>
+                    </div>
+
+                    <div id="collapseSixteen" class="collapse" id="content" aria-labelledby="headingSixteen" data-parent="#our-values-accordion">
+                      <div class="card-body">
+                        <ul id="content">
+                          <li>Concept preparation </li>
+                          <li>Need assessment</li>
+                          <li>Planning & design</li>
+                          <li>Tools & methods development </li>
+                          <li>Manual & materials preparation </li>
+                          <li>Training facilitation   </li>
+                          <li>Evaluation</li>
+                          <li>Impact assessment</li>
+                          
+                                                  
+                          <!-- <button id="readLess">Read Less</button> -->
+                        </ul>
+                        
+                      </div>
+                  
+                  </div>
+
+
+                  </div>
+              </div><!-- Service 4 end -->
 
               </div><!-- Col end -->
 
@@ -648,8 +761,35 @@
                       <img loading="lazy" src="images/projects/food-development.png"  style="height: 70px; width: 80px;"alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                      <h3 class="service-box-title"><a href="#">Food Processing and Product Development</a></h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                      <h3 class="service-box-title">
+                         <div class="card-header p-0 bg-transparent" id="headingTwelve">
+                            <h2 class="mb-0">
+                                <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false"   aria-controls="collapseTwelve">
+                                  <a >Food Processing and Product Development</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                                </button>
+                            </h2>
+                        </div>
+
+                      <div id="collapseTwelve" class="collapse" id="content" aria-labelledby="headingTwelve" data-parent="#our-values-accordion">
+                        <div class="card-body">
+                            <ul id="content">
+                              <li>Food Processing  </li>
+                              <li>Shrimps and fish processing </li>
+                              <li>Product formulation </li>
+                              <li>Nutrition and health</li>
+                              <li>Product diversifications </li>
+                              <li>Fortification and quality assurance </li>
+                              <li>Food Processing and Product Development
+                                Others
+                                </li>
+                                                      
+                              <!-- <button id="readLess">Read Less</button> -->
+                            </ul>
+                          
+                        </div>
+                    
+                    </div>
                     </div>
                 </div><!-- Service 4 end -->
 
@@ -658,8 +798,38 @@
                       <img loading="lazy" src="images/projects/PROJECT MANAGEMENT.jpg" style="height: 70px; width: 80px;" alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                      <h3 class="service-box-title"><a href="#">Project management</a></h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                      <h3 class="service-box-title">
+                         <div class="card-header p-0 bg-transparent" id="headingThirty">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false"              aria-controls="collapseEleven">
+                                <a >Human Resources Development</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                              </button>
+                            </h2>
+                      </div>
+
+                    <div id="collapseThirty" class="collapse" id="content" aria-labelledby="headingThirty" data-parent="#our-values-accordion">
+                      <div class="card-body">
+                        <ul id="content">
+                          <li>HR Planning </li>
+                          
+                          <li>HR Strategy and development </li>
+                          <li>Training and Development </li>
+                          <li>Recruitment and selection </li>
+                          <li>Organizational Restructuring and HR Reengineering</li>
+                          <li>Capacity and skill development</li>
+                          <li>Employee motivation</li>
+                          <li>Performance appraisal</li>
+                          <li>Competency Assessment and Development</li>
+                          <li>Change Management </li>
+
+                                                  
+                          <!-- <button id="readLess">Read Less</button> -->
+                        </ul>
+                        
+                      </div>
+                  
+                  </div>
                     </div>
                 </div><!-- Service 5 end -->
 
@@ -668,16 +838,94 @@
                       <img loading="lazy" src="images/projects/Waste management.jpg" style="height: 70px; width: 80px;"alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                      <h3 class="service-box-title"><a href="#">Waste management</a></h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title">
+                          <div class="card-header p-0 bg-transparent" id="headingFourty">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseFourty" aria-expanded="false"              aria-controls="collapseEleven">
+                                <a >Project management</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                              </button>
+                            </h2>
+                      </div>
+
+                        <div id="collapseFourty" class="collapse" id="content" aria-labelledby="headingFourty" data-parent="#our-values-accordion">
+                          <div class="card-body">
+                            <ul id="content">
+                              <li>Initiation, planning, and design   </li>
+                              
+                              <li>	Human resources management</li>
+                              <li>	Baseline survey</li>
+                              <li>	Sectoral assessment</li>
+                              <li>	Monitoring, evaluation and learning</li>
+                              <li>	Intervention design, LFA and indicator setting</li>
+                              <li>	Resource mobilization</li>
+                              <li>	Program Implementation</li>
+                              <li>	Evaluation </li>
+                              <li>	Impact assessment </li>
+
+                                                      
+                              <!-- <button id="readLess">Read Less</button> -->
+                            </ul>
+                            
+                          </div>
+                      
+                        </div>
+                        </h3>
                     </div>
                 </div><!-- Service 6 end -->
+
+                <div class="ts-service-box d-flex">
+                  <div class="ts-service-box-img">
+                    <img loading="lazy" src="images/services/others.png" style="height: 70px; width: 80px;"alt="service-icon">
+                  </div>
+                  <div class="ts-service-box-info">
+                      <h3 class="service-box-title">
+                        <div class="card-header p-0 bg-transparent" id="headingFifity">
+                          <h2 class="mb-0">
+                            <button class="btn btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseFifity" aria-expanded="false" aria-controls="collapseFifity">
+                              <a >Others</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                            </button>
+                          </h2>
+                    </div>
+
+                      <div id="collapseFifity" class="collapse" id="content" aria-labelledby="headingFifity" data-parent="#our-values-accordion">
+                        <div class="card-body">
+                          <ul id="content">
+                            <li>Marketing and Social research   </li>                            
+                            <li>Technology support</li>
+                            <li>Institutional Capacity and skill development /li>
+                            <li>Women in Development</li>
+                            <li>Event Management</li>
+                            <li>Delegation Services</li>
+                            <li>Cross Border Trade</li>
+                            <li>Need based consultancy</li>
+                          
+
+                                                    
+                            <!-- <button id="readLess">Read Less</button> -->
+                          </ul>
+                          
+                        </div>
+                    
+                      </div>
+                      </h3>
+                  </div>
+              </div><!-- Service 6 end -->
               </div><!-- Col end -->
           </div><!-- Content row end -->
 
         </div>
         <!--/ Container end -->
       </section><!-- Service end -->
+
+          <!-- matrix our Team member profile -->
+
+       
+          
+          
+
+
 
       <!-- ========== -->
        <!-- Feature Start -->
@@ -729,7 +977,7 @@
             </div>
           </div>
           <!--/ Title row end -->
-
+      
           <div class="row">
             <div class="col-12">
               <div class="shuffle-btn-group">
@@ -737,50 +985,63 @@
                   <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show All
                 </label>
                 <label for="commercial">
-                  <input type="radio" name="shuffle-filter" id="commercial" value="commercial">Commercial
+                  <input type="radio" name="shuffle-filter" id="commercial" value="commercial">Baseline Evaluation
                 </label>
                 <label for="education">
-                  <input type="radio" name="shuffle-filter" id="education" value="education">Education
+                  <input type="radio" name="shuffle-filter" id="education" value="education">Mid-term Evaluation
                 </label>
                 <label for="government">
-                  <input type="radio" name="shuffle-filter" id="government" value="government">Government
+                  <input type="radio" name="shuffle-filter" id="government" value="government">Endline and Find Evaluation
                 </label>
                 <label for="infrastructure">
-                  <input type="radio" name="shuffle-filter" id="infrastructure" value="infrastructure">Infrastructure
+                  <input type="radio" name="shuffle-filter" id="infrastructure" value="infrastructure">Global G.A.P
                 </label>
                 <label for="residential">
-                  <input type="radio" name="shuffle-filter" id="residential" value="residential">Residential
+                  <input type="radio" name="shuffle-filter" id="residential" value="residential">Market Research
                 </label>
                 <label for="healthcare">
-                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Healthcare
+                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Capacity Building                
+                </label>
+                <label for="businessPlan">
+                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">BusinessPlan                
+                </label>
+                <label for="healthcare">
+                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Feasibilty Study               
+                </label>
+                <label for="compliances">
+                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare"> Compliances            
+                </label>
+
+                <label for="compliances">
+                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare"> Supply Chain            
                 </label>
               </div><!-- project filter end -->
-
-
+      
+      
               <div class="row shuffle-wrapper">
                 <div class="col-1 shuffle-sizer"></div>
-
+      
                 <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
                   <div class="project-img-container">
-                    <a class="gallery-popup" href="https://www.ikrishi.com/" aria-label="project-img">
-                      <img class="img-fluid" src="images/ikrisi_logo/Logo-02.jpg" alt="project-img">
+                    <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
+                      <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
                       <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                     </a>
                     <div class="project-item-info">
                       <div class="project-item-info-content">
                         <h3 class="project-item-title">
-                          <a href="https://www.ikrishi.com/">Capital Teltway Building</a>
+                          <a href="projects-single.html">Capital Teltway Building</a>
                         </h3>
                         <p class="project-cat">Commercial, Interiors</p>
                       </div>
                     </div>
                   </div>
                 </div><!-- shuffle item 1 end -->
-
+      
                 <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
                   <div class="project-img-container">
                     <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
-                      <img class="img-fluid" src="images/ikrisi_logo/Capture.PNG"  style="height: 300px; width: 300px;" alt="project-img">
+                      <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
                       <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                     </a>
                     <div class="project-item-info">
@@ -793,7 +1054,7 @@
                     </div>
                   </div>
                 </div><!-- shuffle item 2 end -->
-
+      
                 <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
                   <div class="project-img-container">
                     <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
@@ -810,17 +1071,66 @@
                     </div>
                   </div>
                 </div><!-- shuffle item 3 end -->
-
-              
+      
+                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
+                  <div class="project-img-container">
+                    <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
+                      <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
+                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                    </a>
+                    <div class="project-item-info">
+                      <div class="project-item-info-content">
+                        <h3 class="project-item-title">
+                          <a href="projects-single.html">Narriot Headquarters</a>
+                        </h3>
+                        <p class="project-cat">Infrastructure</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- shuffle item 4 end -->
+      
+                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
+                  <div class="project-img-container">
+                    <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
+                      <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
+                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                    </a>
+                    <div class="project-item-info">
+                      <div class="project-item-info-content">
+                        <h3 class="project-item-title">
+                          <a href="projects-single.html">Kalas Metrorail</a>
+                        </h3>
+                        <p class="project-cat">Infrastructure</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- shuffle item 5 end -->
+      
+                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
+                  <div class="project-img-container">
+                    <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
+                      <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
+                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                    </a>
+                    <div class="project-item-info">
+                      <div class="project-item-info-content">
+                        <h3 class="project-item-title">
+                          <a href="projects-single.html">Ancraft Avenue House</a>
+                        </h3>
+                        <p class="project-cat">Residential</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- shuffle item 6 end -->
               </div><!-- shuffle end -->
             </div>
-
+      
             <div class="col-12">
               <div class="general-btn text-center">
                 <a class="btn btn-primary" href="projects.html">View All Projects</a>
               </div>
             </div>
-
+      
           </div><!-- Content row end -->
         </div>
         <!--/ Container end -->
@@ -1182,11 +1492,11 @@
               <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
                 <h3 class="widget-title">Services</h3>
                 <ul class="list-arrow">
-                  <li><a href="service-single.html">Agribusiness</a></li>
-                  <li><a href="service-single.html">Mission</a></li>
-                  <li><a href="service-single.html">Vision</a></li>
-                  <li><a href="service-single.html">Business Consulting</a></li>
-                  <li><a href="service-single.html">Ikrishi</a></li>
+                  <li><a href="#">Agribusiness</a></li>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Business Consulting</a></li>
+                  <li><a href="https://www.ikrishi.com/">Ikrishi</a></li>
                 </ul>
               </div><!-- Col end -->
 
@@ -1211,7 +1521,7 @@
               </div><!-- Col end -->
 
               <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-                <h3 class="widget-title">Volunteer</h3>
+                <h3 class="widget-title">Web Developer</h3>
                 <ul class="list-arrow">
                   <li><a href="arahman.intels.co">Abdur Rahaman</a></li>
                   
